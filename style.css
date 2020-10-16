@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,22 @@ body {
     background: white;
 }
 
+h1 {
+    font-size:2vw;
+    text-shadow: 0.1px 0.1px black;
+}
 
+h2 {
+    font-size:1vw;
+}
+
+h3 {
+    font-size: 1vw;
+}
+
+h4 {
+    font-size: 0.6vw;
+}
 /*NAV MENU*/
 
 nav {
@@ -38,6 +54,7 @@ nav .logo {
     float: left;
     position: absolute;
     left: 2%;
+    top: 5%;
 }
 
 nav ul {
@@ -50,7 +67,7 @@ nav ul {
 nav ul ul {
     float: none;
     position: relative;
-    right: 20%;
+
 }
 
 nav li {
@@ -134,15 +151,19 @@ input,
         float: left;
         position: fixed;
         width: 100vw;
-        height: 90vh;
-        top: 10vh;
+        max-height: 100%;
         text-align: center;
         margin: 0;
-        z-index: 999;
-        overflow-y:scroll;
-        -webkit-overflow-scrolling:touch;
-        overflow-x:hidden;
-       
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        overflow-x: hidden;
+        z-index: -1;
+        border-bottom: 1px solid #E5E5E5;
+
+    }
+
+    .submenu {
+        border: none;
     }
 
     nav a:hover {
@@ -152,7 +173,12 @@ input,
 
     nav .logo {
         position: absolute;
-        z-index:999;
+        z-index: 999;
+
+    }
+
+    nav .logo img {
+        z-index: 999;
 
     }
 
@@ -161,11 +187,8 @@ input,
         display: block;
         width: 100vw;
         margin: 0;
+        box-shadow: 1px 1px white;
 
-    }
-
-    .submenu li {
-        top: 0;
     }
 
     nav ul ul {
@@ -181,7 +204,7 @@ input,
         width: 100vw;
         border: none;
     }
-    
+
     .show {
         display: block;
         color: white;
@@ -228,7 +251,7 @@ input,
 .swiper-container {
     width: 100%;
     height: 100vh;
-
+    box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.25);
 }
 
 .swiper-slide {
@@ -253,68 +276,246 @@ input,
 
 .hero-text {
     width: 30vw;
-    font-size: .8vw;
     position: absolute;
     left: 10%;
     border: 1px solid #C31B18;
     padding: 1vw;
-    height: 40vh;
-    background-color:#E5E5E5;
+    height: 20vw;
+    background-color: rgba(229, 229, 229, 0.85);
 }
 
 .hero-text h1 {
-    margin:1vw;
-    color:#C31B18;
+    margin: 1vw;
+    color: #C31B18;
     text-shadow: 0.1px 0.1px black;
-    font-size: 2vw;
 }
 
 .hero-text h3 {
-    margin:1.5vw;
+    margin: 2vw 1.5vw 1.5vw 1.5vw;
     line-height: 200%;
-    text-align:left;
+    text-align: left;
 }
 
+
 .hero-text button {
-    margin:1vw;
-    width:14vw;
-    background:#C31B18;
-    color:white;
-    text-transform:uppercase;
-    padding:0.5vw;
-    border:none;
-    font-size:1vw;
-    font-weight:200;
-    letter-spacing: 0.05vw;
-    border: 0.01vw solid black;
+    width: 50%;
+    height: 13%;
+    font-size: 0.8vw;
+    color: white;
+    background: #C31B18;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.01vw;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    transition-delay: 50ms;
+
+
+}
+
+.hero-text button:hover {
+    background: rgba(229, 229, 229, 0.01);
+    color: #C31B18;
+    font-weight: 400;
+    border: 1px solid #C31B18;
 }
 
 .slide1 {
     background-image: url(slider1.jpg);
-    background-size: cover
+    background-size: cover;
+    background-position: center;
 }
 
-/*TILES*/
+
+
+@media all and (max-width: 968px) {
+    .hero-text {
+        width: 40vw;
+        height: 25vw;
+        transform: translate(48%, 0%);
+
+
+    }
+
+    .hero-text h1 {
+        font-size: 2.2vw
+    }
+
+    .hero-text h3 {
+        margin: 2vw 2vw;
+        font-size: 1.3vw;
+    }
+
+    .hero-text button {
+        font-size: 1vw;
+    }
+}
+
+@media all and (max-width:600px) {
+    .hero-text {
+        width: 45vw;
+        height: 30vw;
+        transform: translate(35%, 0%)
+    }
+
+    .hero-text h1 {
+        font-size: 2.5vw
+    }
+
+    .hero-text h3 {
+        margin: 2.8vw 2.8vw 2.5vw 2.8vw;
+
+        font-size: 1.6vw;
+    }
+
+    .hero-text button {
+        font-size: 1.2vw;
+    }
+}
+
+
+
+/*TILES GRID!*/
 
 .tiles {
-    text-align: center;
+   text-align: center;
     position: relative;
-    top: 250px;
-
+    top: 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    justify-items:center;
+    margin:auto 15vw;
 }
 
-.zdrowie {
-    display: inline-block;
+
+.title {
+    position: relative;
+    top: -3vw;
+    color: #C31B18;
+    grid-column: 1/4;
 }
 
-.zdrowie a {
+.title h1 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
+}
+
+.title h1:after {
+    content: '';
+    display: block;
+    border-bottom: 1.5px #C31B18 solid;
+    margin: 0 auto;
+    width: 100%;
+    margin-top:0.5vw;
+}
+
+.tile {
+    max-width:25vw;
+    align-items: center;
+    margin:3vw 3vw;
+    border:2px #C31B18 solid;;
+    padding:1vw;
+    border-radius: 8px;
+}
+
+.zdrowie, {
+    grid-column:1/2;
+}
+
+.ike {
+    grid-column: 2/3;
+}
+.pupil {
+    grid-column: 3/4;
+}
+
+.tile img {
+    max-width:5vw;
+}
+
+.tile a {
     text-decoration: none;
 }
 
-.zdrowie h1:after {
+.tile h2:after {
     content: '';
     display: block;
-    border-bottom: 1px red solid;
+    border-bottom: 1.5px #C31B18 solid;
     margin: 0 auto;
-    width: 68%
+    width: 68%;
+    margin-top:0.6vw;
+}
+
+.tile h2 {
+    color:black;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.tile h4 {
+    margin-top:0.5vw;
+    font-family: 'Roboto Slab', sans-serif;
+    color:black;
+    font-weight: 400;
+}
+
+.more {
+    grid-column:1/4;
+    width: 20%;
+}
+
+.more button {
+    grid-column:1/4;
+    width:100%;
+    font-size: 0.8vw;
+    color: white;
+    background: #C31B18;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.01vw;
+    margin-bottom: 15vw;
+    padding:0.5vw;
+    margin-top:2vw;
+}
+
+.more button:hover {
+    background: white;
+    color: #C31B18;
+    font-weight: 400;
+    border: 1px solid #C31B18;
+}
+
+/* O mnie */
+
+.opis {
+    float:right;
+    max-width:40vw;
+}
+
+.omnie img {
+    max-width:40vw;
+    float:left;
+}
+.omnie h1 {
+   float:right;
+}
+
+.omnie h4 {
+    float:right;
+}
+
+.omnie h1:after {
+    content: '';
+    display: block;
+    border-bottom: 1.5px #C31B18 solid;
+    margin: 0 auto;
+    width: 100%;
+    margin-top:0.6vw;
+}
+
+.opis img {
+    max-width: 2vw;
 }
