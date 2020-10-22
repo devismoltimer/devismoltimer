@@ -526,14 +526,14 @@ input,
     .tile h4 {
         font-size: 0.8vw;
     }
-    
+
     .title h1 {
         font-size: 4vw;
-        margin-bottom:2vw;
+        margin-bottom: 2vw;
     }
 
     .more {
-        margin-top:4vw;
+        margin-top: 4vw;
     }
 }
 
@@ -568,7 +568,7 @@ input,
 
     .tile img {
         max-width: 15vw;
-        margin:2vw;
+        margin: 2vw;
     }
 
     .tile h2 {
@@ -585,11 +585,11 @@ input,
     .title h1 {
         font-size: 6vw;
     }
-    
+
     .more button {
-       font-size:1.5vw;
-        width:30%;
-        height:5vw;
+        font-size: 1.5vw;
+        width: 30%;
+        height: 5vw;
     }
 }
 
@@ -602,6 +602,11 @@ input,
     width: 66vw;
     text-align: right;
     margin: 8vw auto;
+
+}
+
+.omniebackground {
+    background-image: linear-gradient(white, #E5E5E5, #E5E5E5, white)
 }
 
 .foto {
@@ -696,7 +701,8 @@ input,
     }
 
     .opis {
-        width: 40vw
+        width: 40vw;
+        margin: left:2vw;
     }
 
     .opis h1 {
@@ -719,30 +725,30 @@ input,
     .readmore button {
         width: 60%;
     }
-    
+
     .social h5 {
-        font-size:.8vw;
+        font-size: .8vw;
     }
-    
+
 
 }
 
 @media all and (max-width: 600px) {
-    
+
     .omnie {
-        margin:auto;
+        margin: auto;
     }
-    
+
     .foto {
         grid-column: 1/3;
         max-width: 60%;
-        margin:auto;
+        margin: auto;
     }
 
     .opis {
         width: 100vw;
         text-align: center;
-        margin:auto;
+        margin: auto;
     }
 
     .opis h1 {
@@ -757,10 +763,10 @@ input,
 
     .opis h4 {
         font-size: 2vw;
-        width:60%;
-        margin:auto;
+        width: 60%;
+        margin: auto;
     }
-    
+
 
 
 
