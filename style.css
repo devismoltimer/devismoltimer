@@ -869,24 +869,26 @@ input,
 
 @media all and (max-width: 968px) {
     .container {
-        padding:0.8vw;
-        width:90%
+        padding: 0.8vw;
+        width: 90%
     }
-    
+
     .dane h2 {
-        font-size:2vw;
+        font-size: 2vw;
     }
+
     .dane h4 {
-        font-sizE:1.2vw;
+        font-sizE: 1.2vw;
     }
+
     .container h3 {
-        font-size:1.2vw;
+        font-size: 1.2vw;
     }
-    
+
     .container h4 {
-        font-size:1vw;
+        font-size: 1vw;
         line-height: 1.3vw;
-        margin:0;
+        margin: 0;
     }
 }
 
@@ -954,52 +956,53 @@ input,
 }
 
 .stopka h1 {
-    font-size: calc(8px + 1vw);
+    font-size: calc(8px + 0.6vw);
     font-weight: 700;
     margin: 1vw 0;
     text-shadow: 0.1px 0.1px black;
 }
 
 .stopka p {
-    font-size:1vw;
+    font-size: calc(6px + 0.5vw);
     font-weight: 200;
-    line-height: 1.3vw;
+    line-height: calc(10px + 0.6vw);
     text-shadow: 0.1px 0.1px black;
 }
 
 .kontaktstopka {
-    margin-left:1vw;
+    margin-left: 1vw;
 }
 
 
 @media all and (max-width: 968px) {
     .stopka h1 {
-    font-size: 1.6vw;
+        font-size: 1.6vw;
     }
 }
 
-@media all and (max-width: 600px)
-{
+@media all and (max-width: 600px) {
     .stopka {
-        width:95%;
+        width: 95%;
         grid-template-columns: 1fr;
         text-align: center;
     }
-    
+
     .stopka h1 {
-        font-size:4vw;
+        font-size: 4vw;
         margin-bottom: 3vw;
     }
-    
+
     .stopka p {
-        font-size:3vw;line-height:5vw;
+        font-size: 3vw;
+        line-height: 5vw;
     }
+
     .stopka div {
-        margin:1vw;
+        margin: 1vw;
     }
-    
+
     .ubezpieczenia {
         grid-row: 4;
     }
-    
+
 }
