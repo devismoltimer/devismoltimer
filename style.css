@@ -1437,7 +1437,7 @@ section {
 @media all and (max-width: 600px) {
     .zycieizdrowie {
         background-color:red;
-        display:block;
+        height:100%;
     }
 }
 
