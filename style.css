@@ -22,7 +22,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1vw;
+    font-size: 0.8vw;
 }
 
 h4 {
@@ -46,8 +46,31 @@ nav:after {
     display: table;
 }
 
+.logo {
+    display: flex;
+}
+
+.tel {
+    margin-left: 30vw;
+    position: absolute;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    top: -30%;
+}
+
+.tel i {
+    color: white;
+    font-size: 20px;
+}
+
+.tel a {
+    font-size: 20px;
+}
+
+
 .logo img {
-    max-width: 60px;
+    max-width: 200px;
 
 }
 
@@ -55,7 +78,7 @@ nav .logo {
     float: left;
     position: absolute;
     left: 2%;
-    top: 5%;
+    top: 20%;
 }
 
 nav ul {
@@ -88,8 +111,7 @@ nav a {
 }
 
 nav a:hover {
-    box-shadow: 0 0 8px #E5E5E5;
-    border-radius: 5px;
+    font-weight: 650;
     color: #E5E5E5;
 }
 
@@ -100,7 +122,7 @@ nav ul ul {
     visibility: hidden;
     transition: all 0.5s ease 0s;
     height: auto;
-
+    left: 0%
 }
 
 nav ul li:hover > ul {
@@ -114,12 +136,13 @@ nav ul li:hover > ul {
 nav ul ul li {
     position: relative;
     margin: 0px;
-    width: 160px;
+    width: 220px;
     float: none;
     display: list-item;
     transition: .3s;
-    border-top: 1px solid #E5E5E5;
+    border-top: 1px solid #C31B18;
     text-align: center;
+
 }
 
 nav ul ul li a {
@@ -140,6 +163,30 @@ input,
     display: none;
 }
 
+.navindex {
+    background-color: white;
+    border-bottom: 1px solid #C31B18;
+}
+
+.navindex ul li {
+    background-color: white;
+}
+
+.navindex ul li a {
+    color: #C31B18;
+}
+
+.navindex i {
+    color: #C31B18;
+}
+
+.telindex a {
+    color: #C31B18;
+}
+
+.navindex span {
+    color: #C31B18;
+}
 
 
 @media all and (max-width: 968px) {
@@ -216,7 +263,7 @@ input,
     }
 
     .show:hover {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .icon {
@@ -229,10 +276,24 @@ input,
     }
 
     .show + a,
-    ul {
+    .ul,
+    .tel {
         display: none;
     }
+
+    .indexshow {
+        color: #C31B18;
+    }
+
+    .navindex > .ul {
+        border-bottom: 1px solid #C31B18;
+    }
+
+    .logo img {
+        width: 40vw;
+    }
 }
+
 
 [id^=btn]:checked + ul {
     display: block;
@@ -278,7 +339,7 @@ input,
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: #C31B18
+    color: #C31B18 !important;
 }
 
 .hero-text {
@@ -301,6 +362,7 @@ input,
     margin: 2vw 1.5vw 1.5vw 1.5vw;
     line-height: 200%;
     text-align: left;
+    line-height: 2vw;
 }
 
 
@@ -322,20 +384,77 @@ input,
 
 }
 
-.hero-text button:hover {
-    background: rgba(229, 229, 229, 0.01);
+.slide1 button:hover {
+    color: #8e1230;
+    border: 1px solid #8e1230;
+    background-color: transparent;
+    font-weight: 400;
+}
+
+.slide2 button:hover {
+    background: transparent;
     color: #C31B18;
     font-weight: 400;
     border: 1px solid #C31B18;
 }
 
+.slide3 button:hover {
+    background: transparent;
+    color: #752127;
+    font-weight: 400;
+    border: 1px solid #752127;
+}
+
+
 .slide1 {
-    background-image: url(slider1.jpg);
+    background-image: url(emerytura.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.slide2 {
+    background-image: url(rodzina.jpg);
     background-size: cover;
     background-position: center;
 }
 
+.slide3 {
+    background-image: url(firmowe.jpg);
+    background-size: cover;
+    background-position: top;
+}
 
+
+.slide1 > .hero-text {
+    border: 1px solid #8e1230;
+}
+
+.slide1 h1 {
+    color: #8e1230;
+}
+
+.slide1 button {
+    background-color: #8e1230;
+}
+
+.slide3 > .hero-text {
+    border: 1px solid #752127;
+}
+
+.slide3 h1 {
+    color: #752127;
+}
+
+.slide3 button {
+    background-color: #752127;
+}
+
+
+@media all and (min-width:968px) {
+    .slide1 > .hero-text {
+        left: 60%;
+    }
+}
 
 @media all and (max-width: 968px) {
     .hero-text {
@@ -355,13 +474,20 @@ input,
 
     .hero-text h3 {
         margin: 1vw 2vw;
-        font-size: 1.6vw;
+        font-size: 1.3vw;
         text-align: center;
+        line-height: 2.4vw;
     }
 
     .hero-text button {
         font-size: 1.1vw;
+        margin-top: 1vw;
     }
+
+    .slide3 {
+        background-position: 60% top;
+    }
+
 
 }
 
@@ -379,12 +505,17 @@ input,
 
     .hero-text h3 {
         margin: 3vw 0;
-        font-size: 2vw;
+        font-size: 1.8vw;
         text-align: center;
+        line-height: 3.5vw;
     }
 
     .hero-text button {
         font-size: 1.5vw;
+    }
+
+    .slide1 {
+        background-position: 3% top;
     }
 }
 
@@ -434,6 +565,7 @@ input,
     padding: 2vw 1vw;
     border-radius: 8px;
     transition: 750ms;
+    min-width: 19vw;
 }
 
 .tile:hover {
@@ -442,12 +574,9 @@ input,
     text-shadow: 0.1px 0.1px #C31B18;
 }
 
-.ike {
-    grid-column: 1/4;
-}
-
 .tile img {
     max-width: 5vw;
+    width: 5vw;
 }
 
 .tile a {
@@ -570,6 +699,7 @@ input,
     .tile img {
         max-width: 15vw;
         margin: 2vw;
+        width: 15vw;
     }
 
     .tile h2 {
@@ -685,11 +815,13 @@ input,
 }
 
 .readmore button:hover {
-    background: white;
+    background: transparent;
     color: #C31B18;
     font-weight: 400;
     border: 1px solid #C31B18;
 }
+
+
 
 @media all and (max-width: 968px) {
     .omnie {
@@ -737,11 +869,11 @@ input,
 @media all and (max-width: 600px) {
 
     .omnie {
-        margin: auto;
+        grid-template-columns: 1fr;
+        justify-content: center;
     }
 
     .foto {
-        grid-column: 1/3;
         max-width: 40%;
         margin: auto;
     }
@@ -787,7 +919,6 @@ input,
         width: 80%;
         height: 5vw;
     }
-
 }
 
 
@@ -846,12 +977,13 @@ input,
     color: white;
     padding: 0.8vw;
     width: 60%;
+    grid-column: 1
 }
 
 .container h3 {
     font-size: 0.8vw;
     font-weight: 500;
-    margin-bottom: 1vw;
+    margin-bottom: 0.5vw;
 }
 
 .container h4 {
@@ -867,10 +999,28 @@ input,
     background-image: linear-gradient(white, #C31B18, #C31B18)
 }
 
+.partner {
+    margin-top: 2vw;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-image: linear-gradient(to right, white, #E5E5E5);
+    padding: 0.5vw;
+}
+
+.partner h3 {
+    justify-self: center;
+    align-self: center;
+}
+
+.partner img {
+    width: 15vw;
+
+}
+
 @media all and (max-width: 968px) {
     .container {
         padding: 0.8vw;
-        width: 90%
+        width: 90%;
     }
 
     .dane h2 {
@@ -883,6 +1033,8 @@ input,
 
     .container h3 {
         font-size: 1.2vw;
+        margin-bottom: 0.5vw;
+
     }
 
     .container h4 {
@@ -890,6 +1042,7 @@ input,
         line-height: 1.3vw;
         margin: 0;
     }
+
 }
 
 @media all and (max-width: 600px) {
@@ -902,6 +1055,7 @@ input,
         width: 50vw;
         height: 50vw;
         margin-top: 5vw;
+        margin-left: 0;
     }
 
     .mapa iframe {
@@ -912,10 +1066,12 @@ input,
     .dane {
         grid-row: 1;
         text-align: center;
+        margin: 0;
     }
 
     .dane h2 {
         font-size: 5vw;
+        margin: auto;
     }
 
     .dane h2:after {
@@ -935,13 +1091,22 @@ input,
     }
 
     .container h3 {
-        font-size: 2.6vw
+        font-size: 2.6vw;
+        margin-top: 1vw;
     }
 
     .container h4 {
         line-height: 3.5vw;
+        margin-top: 2vw;
     }
 
+    .partner img {
+        width: 40vw;
+    }
+
+    .partner h3 {
+        font-size: 2vw;
+    }
 
 }
 
@@ -953,6 +1118,7 @@ input,
     width: 60%;
     margin: 0 auto;
     color: white;
+    height: 24vh;
 }
 
 .stopka h1 {
@@ -962,11 +1128,17 @@ input,
     text-shadow: 0.1px 0.1px black;
 }
 
-.stopka p {
+.stopka a {
     font-size: calc(6px + 0.5vw);
     font-weight: 200;
     line-height: calc(10px + 0.6vw);
     text-shadow: 0.1px 0.1px black;
+    color: white;
+    text-decoration: none;
+}
+
+.stopka a:hover {
+    font-weight: 600;
 }
 
 .kontaktstopka {
@@ -975,6 +1147,7 @@ input,
 
 
 @media all and (max-width: 968px) {
+
     .stopka h1 {
         font-size: 1.6vw;
     }
@@ -985,6 +1158,7 @@ input,
         width: 95%;
         grid-template-columns: 1fr;
         text-align: center;
+        height: 100%;
     }
 
     .stopka h1 {
@@ -992,7 +1166,7 @@ input,
         margin-bottom: 3vw;
     }
 
-    .stopka p {
+    .stopka a {
         font-size: 3vw;
         line-height: 5vw;
     }
@@ -1006,3 +1180,273 @@ input,
     }
 
 }
+
+/* Emerytura */
+
+section {
+    height: 100vh;
+    background-image: url(pieniadze.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.ike {
+    grid-column: 1/2;
+}
+
+.square {
+    height: 28vw;
+    width: 34vw;
+    align-self: center;
+    justify-self: center;
+    background-color: #E5E5E5;
+    opacity: 80%;
+    margin-top: 5vw;
+    box-shadow: 1px 1px 2px black;
+
+}
+
+.square h3 {
+    margin: 0vw 2vw 1vw 2vw;
+    font-size: 1.2vw;
+    font-family: 'Roboto Slab';
+}
+
+.square li {
+    margin-left: 2vw;
+    line-height: 1.4vw;
+    font-size: 0.7vw;
+    font-family: 'Roboto Slab';
+}
+
+.head {
+    width: 100%;
+    background-color: #e9573d;
+    text-align: center;
+    color: white;
+    padding: 0.5vw;
+    border: 0.1vw solid black;
+}
+
+.border {
+    padding: 1vw;
+}
+
+.head h1 {
+    font-size: 1.8vw;
+    letter-spacing: 0.1vw;
+    text-shadow: 1px 1px 3px black;
+    margin-bottom: 0.5vw;
+}
+
+.head h2 {
+    margin-bottom: 1vw;
+    font-weight: 300;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+}
+
+.square a {
+    margin-top: 0.8vw;
+    text-decoration: none;
+    text-align: center;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.square button {
+    width: 40%;
+    background-color: #8e1230;
+    color: white;
+    height: 2.2vw;
+    border: 1px solid black;
+    font-size: 0.8vw;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.square button:hover {
+    background-color: transparent;
+    color: #8e1230;
+    border: 1px solid #8e1230;
+    cursor: pointer;
+    font-weight: 400;
+
+}
+
+.head {
+    background: #8e1230;
+}
+
+.navike {
+    background-color: #8e1230;
+}
+
+.navike ul li {
+    background-color: #8e1230;
+}
+
+.navike ul li li {
+    border-top: 1px solid white;
+}
+
+@media all and (max-width: 1300px) {
+    .square h3 {
+        margin: 1vw 2vw 0.8vw 2vw;
+    }
+
+}
+
+@media all and (max-width: 968px) {
+    .navike ul li li {
+        border: none;
+    }
+}
+
+@media all and (max-width: 600px) {
+    section {
+        grid-template-columns: 1fr;
+        background-image: linear-gradient(to right, rgba(142, 18, 48, 0.3), #E5E5E5, #E5E5E5, rgba(142, 18, 48, 0.3));
+        height: 100%;
+    }
+
+    .square {
+        width: 100%;
+        height: 80%;
+        margin-top: 25%;
+        opacity: 100%;
+    }
+
+    .square h1 {
+        font-size: 5vw;
+    }
+
+    .square h2 {
+        font-size: 3vw;
+    }
+
+    .square h3 {
+        font-size: 3vw;
+        margin: 3vw 2vw;
+    }
+
+    .square li {
+        font-size: 2.2vw;
+        line-height: 3vw;
+        margin-left: 5vw;
+    }
+
+    .square button {
+        margin-top: 4vw;
+        min-height: 5vw;
+        font-size: 1.6vw;
+    }
+
+    .head {
+        border-left: none;
+        border-right: none;
+    }
+
+    .border {
+        padding: 5vw;
+    }
+
+
+}
+
+/*Stopka podmenu*/
+
+.stopkasub,
+.stopkasub a {
+    color: black;
+}
+
+.stopkasub {
+    margin-top: 15vw;
+    border-radius: 5px;
+    padding: 0.5vw;
+}
+
+.tlostopkasub {
+    background-image: radial-gradient(circle, rgba(142, 18, 48, 0.2), #E5E5E5);
+    border-top: 1px solid black;
+}
+
+.stopkasub h1 {
+    font-weight: 500;
+}
+
+.tlostopkazyciesub {
+    background-image: radial-gradient(circle, rgba(195, 27, 24, 0.2), #E5E5E5);
+}
+
+@media all and (max-width: 600px) {
+    .tlostopkasub {
+        border-top: none;
+    }
+
+    .stopkasub {
+        margin-top: 0;
+    }
+
+    .naskroty h1 {
+        margin-top: 15vw;
+
+    }
+
+}
+
+
+/* Życie i zdrowie */
+
+.zycieizdrowie {
+    height: 100vh;
+    background-image: url(dziecko.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.kontener {
+    border: 2px solid white;
+    height: 25vw;
+    width: 18vw;
+    justify-self: center;
+    margin-top: 10vw;
+    margin-right: 2vw;
+}
+
+.ozyciuplus {
+    background-color: rgba(195, 27, 24, 0.8);
+    margin-left: 6vw;
+
+}
+
+.ozyciu {
+    grid-column: 4/5;
+    background-color: rgba(195, 27, 24, 0.8);
+}
+
+.profamilia {
+    background-color: rgba(195, 27, 24, 0.8);
+}
+
+/* Grupowe */
+
+.grupowetlo {
+    height: 100vh;
+    background-image: url(grupowe.JPG);
+    background-size: cover;
+
+}
+
+.grupowe {
+    border: 1px solid white;
+    height: 10vw;
+    width: 10vw;

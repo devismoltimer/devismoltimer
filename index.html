@@ -15,29 +15,28 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="navindex">
             <div class="logo">
                 <img src="logo.png">
+                <div class="tel telindex">
+                    <i class="fa fa-phone"></i>
+                    <a href="#">791 895 676</a>
+                </div>
             </div>
             <label for="btn" class="icon">
                 <span class="fa fa-bars"></span>
             </label>
             <input type="checkbox" id="btn">
-            <ul>
+            <ul class="ul">
                 <li><a href="#">Start</a></li>
                 <li>
-                    <label for="btn-1" class="show">Oferta +</label>
+                    <label for="btn-1" class="show indexshow">Oferta +</label>
                     <a href="#">Oferta</a>
                     <input type="checkbox" id="btn-1">
                     <ul class="submenu">
-                        <li><a href="#">Ubezpieczenie1</a></li>
-                        <li><a href="#">Ubezpieczenie2</a></li>
-                        <li><a href="#">Ubezpieczenie3</a></li>
-                        <li><a href="#">Ubezpieczenie4</a></li>
-                        <li><a href="#">Ubezpieczenie5</a></li>
-                        <li><a href="#">Ubezpieczenie6</a></li>
-                        <li><a href="#">Ubezpieczenie7</a></li>
-                        <li><a href="#">Ubezpieczenie8</a></li>
+                        <li><a href="emerytura.html">IKE/IKZE</a></li>
+                        <li><a href="zycie.html">Życie i zdrowie</a></li>
+                        <li><a href="grupowe.html">Ubezpieczenie firmowe</a></li>
                     </ul>
                 </li>
                 <li><a href="#">O mnie</a></li>
@@ -48,21 +47,45 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1">
-                        <div class="hero-text">
-                            <h1>Ubezpieczenie zdrowotne</h1>
-                            <h3>- nawet na 2.000.000 gdyby Cię zabrakło<br>
-                                - ubezpieczenie na życie już od 20zł/miesiąc<br>
-                                - zawarcie polisy 100% zdalnie
+                        <div class="hero-text heroindex">
+                            <h1>IKE/IKZE</h1>
+                            <h3>- oferta inwestycyjna o różnym stopniu ryzyka<br>
+                                - opcja wskazania osoby uprawnionej do wypłaty środków<br>
+                                - możliwość dokonania częściowego lub całkowitego zwrotu
                             </h3>
-                            <a href="#">
+                            <a href="emerytura.html">
                                 <button>przejdź do szczegółów</button>
                             </a>
 
                         </div>
                     </div>
-                    <div class="swiper-slide slide2">Slide 2</div>
-                    <div class="swiper-slide slide3">Slide 3</div>
-                    <div class="swiper-slide slide4">Slide 4</div>
+                    <div class="swiper-slide slide2">
+                        <div class="hero-text">
+                            <h1>Życie i zdrowie</h1>
+                            <h3>- nawet na 2.000.000 gdyby Cię zabrakło<br>
+                                - ubezpieczenie na życie już od 20zł/miesiąc<br>
+                                - zawarcie polisy 100% zdalnie
+                            </h3>
+                            <a href="zycie.html">
+                                <button>przejdź do szczegółów</button>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide3">
+                        <div class="hero-text">
+                            <h1>Ubezpieczenie firmowe</h1>
+                            <h3>- nawet na 2.000.000 gdyby Cię zabrakło<br>
+                                - ubezpieczenie na życie już od 20zł/miesiąc<br>
+                                - zawarcie polisy 100% zdalnie
+                            </h3>
+                            <a href="grupowe.html">
+                                <button>przejdź do szczegółów</button>
+                            </a>
+
+                        </div>
+                    </div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
@@ -76,25 +99,25 @@
         <div class="title">
             <h1>Ubezpieczenia</h1>
         </div>
-        <a href="#">
-            <div class="zdrowie tile">
-                <img src="zycie.svg">
-                <h2>Ubezpieczenie na życie</h2>
-                <h4>Ubezpiecz się samodzielnie wybierając wielkość świadczeń</h4>
+        <a href="emerytura.html">
+            <div class="ike tile">
+                <img id="dolar" src="dolar.svg">
+                <h2>IKE/IKZE</h2>
+                <h4>Zadbaj o wysoki standard życia na emeryturze</h4>
 
             </div>
         </a>
-        <a href="#">
-            <div class="ike tile">
-                <img src="zycie.svg">
-                <h2>Ubezpieczenie na życie</h2>
+        <a href="zycie.html">
+            <div class="tile">
+                <img src="insurance.svg">
+                <h2>Życie i zdrowie</h2>
                 <h4>Ubezpiecz się samodzielnie wybierając wielkość świadczeń</h4>
             </div>
         </a>
-        <a href="#">
-            <div class="pupil tile">
-                <img src="zycie.svg">
-                <h2>Ubezpieczenie na życie</h2>
+        <a href="grupowe.html">
+            <div class="tile">
+                <img src="group.svg">
+                <h2>Ubezpieczenie firmowe</h2>
                 <h4>Ubezpiecz się samodzielnie wybierając wielkość świadczeń</h4>
             </div>
         </a>
@@ -146,26 +169,33 @@
                 </div>
                 <div class="partner">
                     <h3>Partner:</h3>
-                    <h1>Obraz bezpieczny pl</h1>
+                    <img src="bezpieczny.png">
                 </div>
             </div>
         </div>
-        <div class ="stopka">
+        <div class="stopka">
             <div class="ubezpieczenia">
                 <h1>Ubezpieczenia</h1>
-                <p>Ubezpieczenie Szkolne<br>NNW Przedszkolne<br>NNW/OC dla Studenta<br>Ubezpieczenie nieruchomości<br>Ubezpieczenie zdrowotne<br>Ubezpieczenie w podróży<br><br><br><br><br><br></p>
+                <a href="emerytura.html">IKE/IKZE</a><br>
+                <a href="zycie.html">Życie i zdrowie</a><br>
+                <a href="firmowe.html">Ubezpieczenie firmowe</a>
             </div>
             <div class="naskroty">
                 <h1>Na skróty</h1>
-                <p>Start<br>Oferta<br>O mnie<br>Kontakt</p>
+                <a href="index.html">Start</a><br>
+                <a href="oferta.hmtl">Oferta</a><br>
+                <a href="omnie.html">O mnie</a><br>
+                <a href="kontakt.html">Kontakt</a>
             </div>
             <div class="socialmedia">
                 <h1>Social Media</h1>
-                <p>Facebook<br>Instagram</p>
+                <a href="#">Facebook</a><br>
+                <a href="#">Instagram</a>
             </div>
             <div class="kontaktstopka">
                 <h1>Kontakt</h1>
-                <p>tel. 798 467 276<br>marcin@onet.pl</p>
+                <a href="#">tel. 798 467 276</a><br>
+                <a href="#">marcin@onet.pl</a>
             </div>
         </div>
     </div>
@@ -188,9 +218,13 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            effect: 'fade',
         });
+
     </script>
     <script src="js/script.js"></script>
 
 
-</body></html>
+</body>
+
+</html>
