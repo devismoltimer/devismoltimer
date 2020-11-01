@@ -46,9 +46,6 @@ nav:after {
     display: table;
 }
 
-.logo {
-    display: flex;
-}
 
 .tel {
     margin-left: 30vw;
@@ -75,6 +72,7 @@ nav:after {
 }
 
 nav .logo {
+    display:flex;
     float: left;
     position: absolute;
     left: 2%;
@@ -222,6 +220,7 @@ input,
     nav .logo {
         z-index: 999;
         display:block;
+        flex-wrap:wrap;
 
     }
 
@@ -230,6 +229,7 @@ input,
             width: 35vw;
             max-width:35vw;
             max-height:100%;
+          
 
     }
 
