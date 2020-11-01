@@ -222,6 +222,7 @@ input,
     nav .logo {
         position: absolute;
         z-index: 999;
+        display:block;
 
     }
 
