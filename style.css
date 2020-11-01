@@ -1434,6 +1434,12 @@ section {
     background-color: rgba(195, 27, 24, 0.8);
 }
 
+@media all and (max-width: 600px) {
+    .zycieizdrowie {
+        background-color:red;
+    }
+}
+
 /* Grupowe */
 
 .grupowetlo {
