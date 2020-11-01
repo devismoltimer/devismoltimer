@@ -290,10 +290,7 @@ input,
     }
 
     .logo img {
-        line-height:0;
-        height:auto;
-        width:auto;
-        max-width: 35vw;
+        width: 35vw;
     }
 }
 
