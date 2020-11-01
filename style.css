@@ -291,8 +291,7 @@ input,
 
     .logo img {
         width: 40vw;
-        max-height:20vw;
-
+        max-height:10vw;
     }
 }
 
