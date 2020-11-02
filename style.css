@@ -53,7 +53,6 @@ nav:after {
     width: 20vw;
     display: flex;
     align-items: center;
-    top: -30%;
 }
 
 .tel i {
@@ -67,16 +66,19 @@ nav:after {
 
 
 .logo img {
-    max-width: 200px;
+    width: 250px;
+    max-width: 300px;
+    position: relative;
+    top: 20%;
+    padding: 0.4vw;
 
 }
 
 nav .logo {
-    display:flex;
+    display: flex;
     float: left;
     position: absolute;
     left: 2%;
-    top: 20%;
 }
 
 nav ul {
@@ -182,6 +184,10 @@ input,
     color: #C31B18;
 }
 
+.telindex a:hover {
+    color: #C31B18;
+}
+
 .navindex span {
     color: #C31B18;
 }
@@ -218,16 +224,15 @@ input,
     }
 
     nav .logo {
+        position: absolute;
         z-index: 999;
-        display:block;
-        flex-wrap:wrap;
+
 
     }
 
     nav .logo img {
-            z-index: 999;
-            width: 170px;
-            max-width:170px;
+        z-index: 999;
+
     }
 
     nav ul li,
@@ -289,7 +294,21 @@ input,
         border-bottom: 1px solid #C31B18;
     }
 
-   
+    .logo img {
+        width: 200px;
+    }
+
+
+}
+
+@media all and (max-width: 600px) {
+    .logo {
+        top: 23%;
+    }
+
+    .logo img {
+        width: 150px;
+    }
 }
 
 [id^=btn]:checked + ul {
@@ -297,6 +316,11 @@ input,
     transition: 5s;
 }
 
+@media all and (min-width: 600px) and (max-width:968px) {
+    .logo {
+        top: 10%;
+    }
+}
 
 
 
@@ -547,6 +571,7 @@ input,
     font-weight: 400;
 }
 
+
 .title h1:after {
     content: '';
     display: block;
@@ -563,6 +588,15 @@ input,
     border-radius: 8px;
     transition: 750ms;
     min-width: 19vw;
+    margin-bottom: 15vw;
+}
+
+.iketile {
+    border: 1px #8e1230 solid;
+}
+
+.firmowetile {
+    border: 1px #752127 solid;
 }
 
 .tile:hover {
@@ -571,14 +605,36 @@ input,
     text-shadow: 0.1px 0.1px #C31B18;
 }
 
+.iketile:hover {
+    box-shadow: 0 0 12px #8e1230;
+    text-shadow: 0.1px 0.1px #8e1230;
+}
+
+.firmowetile:hover {
+    box-shadow: 0 0 12px #752127;
+    text-shadow: 0.1px 0.1px #752127;
+}
+
 .tile img {
     max-width: 5vw;
     width: 5vw;
+    background-image: radial-gradient(circle, rgba(142, 18, 48, 0.2), white);
+}
+
+.zycietile img {
+    background-image: radial-gradient(circle, rgba(195, 27, 24, 0.2), white);
+}
+
+.firmowetile img {
+    background-image: radial-gradient(circle, rgba(117, 33, 39, 0.2), white);
+}
 }
 
 .tile a {
     text-decoration: none;
 }
+
+
 
 .tile h2:after {
     content: '';
@@ -587,6 +643,14 @@ input,
     margin: 0 auto;
     width: 68%;
     margin-top: 0.6vw;
+}
+
+.iketile h2:after {
+    border-bottom: 0.5px #8e1230 solid;
+}
+
+.firmowetile h2:after {
+    border-bottom: 0.5px #752127 solid;
 }
 
 .tiles a {
@@ -1195,7 +1259,7 @@ section {
 }
 
 .square {
-    height: 28vw;
+    height: 33vw;
     width: 34vw;
     align-self: center;
     justify-self: center;
@@ -1265,6 +1329,7 @@ section {
     font-size: 0.8vw;
     font-weight: 200;
     text-transform: uppercase;
+    margin-top: 1vw;
 }
 
 .square button:hover {
@@ -1300,8 +1365,30 @@ section {
 }
 
 @media all and (max-width: 968px) {
+
+    .square {
+        height: 42vw
+    }
+
     .navike ul li li {
         border: none;
+    }
+
+    .square h1 {
+        font-size: 2.4vw;
+
+    }
+
+    .square h2 {
+        font-size: 2vw;
+    }
+
+    .square h3 {
+        font-size: 2vw;
+    }
+
+    .square li {
+        font-size: 1vw;
     }
 }
 
@@ -1403,7 +1490,7 @@ section {
 
 .zycieizdrowie {
     height: 100vh;
-    background-image: url(dziecko.JPG);
+    background-image: url(dziecko.jpg);
     background-size: cover;
     background-position: center;
     display: grid;
@@ -1434,13 +1521,6 @@ section {
     background-color: rgba(195, 27, 24, 0.8);
 }
 
-@media all and (max-width: 600px) {
-    .zycieizdrowie {
-        background-color:red;
-        height:100vh;
-    }
-}
-
 /* Grupowe */
 
 .grupowetlo {
@@ -1454,3 +1534,16 @@ section {
     border: 1px solid white;
     height: 10vw;
     width: 10vw;
+}
+
+.navgrupowe {
+    background-color: #752127;
+}
+
+.navgrupowe ul li {
+    background-color: #752127;
+}
+
+.navgrupowe ul ul li {
+    border-top: 1px solid white;
+}
