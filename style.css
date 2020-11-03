@@ -53,6 +53,7 @@ nav:after {
     width: 20vw;
     display: flex;
     align-items: center;
+    top:-10%;
 }
 
 .tel i {
@@ -66,19 +67,19 @@ nav:after {
 
 
 .logo img {
-    width: 250px;
+    width: 220px;
     max-width: 300px;
-    position: relative;
-    top: 20%;
     padding: 0.4vw;
+    
 
 }
 
 nav .logo {
-    display: block;
+    display: flex;
     float: left;
     position: absolute;
     left: 2%;
+    top:10%;
 }
 
 nav ul {
@@ -226,7 +227,7 @@ input,
     nav .logo {
         position: absolute;
         z-index: 999;
-
+        display:block;
 
     }
 
@@ -1311,7 +1312,7 @@ section {
     text-transform: uppercase;
 }
 
-.square a {
+.border a {
     margin-top: 0.8vw;
     text-decoration: none;
     text-align: center;
@@ -1321,7 +1322,7 @@ section {
 
 }
 
-.square button {
+.border button {
     width: 40%;
     background-color: #8e1230;
     color: white;
@@ -1333,7 +1334,7 @@ section {
     margin-top: 1vw;
 }
 
-.square button:hover {
+.border button:hover {
     background-color: transparent;
     color: #8e1230;
     border: 1px solid #8e1230;
@@ -1365,6 +1366,7 @@ section {
 
 }
 
+
 @media all and (max-width: 968px) {
 
     section {
@@ -1373,7 +1375,7 @@ section {
 
     .square {
         margin-top:6vw;
-        height: 46vw;
+        height: 42vw;
         width:36vw;
     }
 
@@ -1398,8 +1400,14 @@ section {
         font-size: 1vw;
     }
 
-    .square button {
+    .border button {
         margin-top:2vw;
+    }
+}
+
+@media all (min-width:600px) and (max-width:650px){
+    .square {
+        height:50vw;
     }
 }
 
@@ -1436,7 +1444,7 @@ section {
         margin-left: 5vw;
     }
 
-    .square button {
+    .border button {
         margin-top: 4vw;
         min-height: 5vw;
         font-size: 1.6vw;
@@ -1518,9 +1526,12 @@ section {
     align-content: center;
 }
 
+.submenuzycie li {
+    border-top:1px solid white;
+}
 .squarezycie {
     width: 30vw;
-    height: 30vw;
+    height: 32vw;
     justify-self: center;
     opacity: 80%;
     background-color: #E5E5E5;
@@ -1542,9 +1553,33 @@ section {
     margin-top: 1.5vw;
     line-height: 2vw;
 }
+.squarezycie button {
+background-color:#C31B18;
+}
+.goplus button {
+    margin-top:0.5vw;
+}
 
+.generaliz button {
+    margin-top:1.5vw;
+}
+
+.gpr button {
+    margin-top:0.5vw;
+}
+.squarezycie button:hover {
+    border:1px solid #C31B18;
+    color:#C31B18;
+}
 .squarezycie > .head {
     background-color: #C31B18;
+}
+
+
+@media all and (max-width:968px){
+    .submenuzycie li {
+        border-top:none;
+    }
 }
 
 /* Grupowe */
@@ -1572,4 +1607,10 @@ section {
 
 .navgrupowe ul ul li {
     border-top: 1px solid white;
+}
+
+@media all and (max-width:968px){
+    .navgrupowe ul ul li {
+        border-top:none;
+    }
 }
