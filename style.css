@@ -76,6 +76,7 @@ nav:after {
 
 nav .logo {
     display: flex;
+    flex-wrap: wrap;
     float: left;
     position: absolute;
     left: 2%;
@@ -1367,7 +1368,12 @@ section {
 
 @media all and (max-width: 968px) {
 
+    section {
+        height:120vh;
+    }
+
     .square {
+        margin-top:10vw;
         height: 42vw
     }
 
@@ -1470,9 +1476,17 @@ section {
     background-image: radial-gradient(circle, rgba(195, 27, 24, 0.2), #E5E5E5);
 }
 
+@media all and (max-width: 968px) {
+    .tlostopkasub {
+        height:70vh
+    }
+}
+
+
 @media all and (max-width: 600px) {
     .tlostopkasub {
         border-top: none;
+        height:100vh;
     }
 
     .stopkasub {
