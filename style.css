@@ -303,8 +303,8 @@ input,
 }
 
 @media all and (max-width: 600px) {
-    .logo {
-        top: 23%;
+    nav .logo {
+        top: 25%;
     }
 
     .logo img {
@@ -1414,7 +1414,7 @@ section {
 @media all and (max-width: 600px) {
     section {
         grid-template-columns: 1fr;
-        background-image: linear-gradient(to right, rgba(142, 18, 48, 0.3), #E5E5E5, #E5E5E5, rgba(142, 18, 48, 0.3));
+        background-image: linear-gradient(to right, rgba(142, 18, 48, 0.2), #E5E5E5, #E5E5E5, rgba(142, 18, 48, 0.2));
         height: 100%;
     }
 
@@ -1517,7 +1517,7 @@ section {
 
 .zycieizdrowie {
     height: 100vh;
-    background-image: url(dziecko.JPG);
+    background-image: url(dziecko.jpg);
     background-size: cover;
     background-position: center;
     display: grid;
@@ -1582,21 +1582,74 @@ background-color:#C31B18;
     }
 }
 
+@media all and (max-width:600px) {
+
+    .zycieizdrowie {
+        grid-template-columns: 1fr;
+        background-image: linear-gradient(to right,rgba(195, 27, 24, 0.2), #E5E5E5, #E5E5E5, rgba(195, 27, 24, 0.2));
+        height:100%;
+    }
+    .squarezycie {
+        width:100%;
+        height: 80%;
+        margin-top: 22vw;
+        opacity: 100%;
+    }
+
+    .squarezycie h2 {
+        font-size:4vw;
+    }
+
+    .squarezycie h3 {
+        font-size: 4vw;
+        margin: 3vw 2vw;
+        line-height:4vw;
+    }
+
+    .squarezycie p {
+        margin-top:6vw;
+        font-size: 3vw;
+        line-height: 3.5vw;
+        margin-left: 5vw;
+    }
+
+    .squarezycie button {
+        margin-top:10vw;
+        height:8vw;
+        font-size:3vw;
+    }
+
+
+
+}
+
+
+
 /* Grupowe */
 
 .grupowetlo {
     height: 100vh;
     background-image: url(grupowe.JPG);
     background-size: cover;
-
+    display:block;
+    justify-content: center;
+    align-items:center;
 }
 
-.grupowe {
-    border: 1px solid white;
-    height: 10vw;
-    width: 10vw;
+.squaregrupowy {
+    position:relative;
+    top:20%;
+    width:60vw;
+    height:30vw;
+    margin:auto;
+    background-color: #E5E5E5;
+    opacity: 80%;
+    box-shadow:1px 1px 2px black;
 }
 
+.squaregrupowy h2 {
+    margin:1vw;
+}
 .navgrupowe {
     background-color: #752127;
 }
