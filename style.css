@@ -1258,6 +1258,7 @@ section {
     grid-column: 1/2;
 }
 
+
 .square {
     height: 33vw;
     width: 34vw;
@@ -1494,31 +1495,38 @@ section {
     background-size: cover;
     background-position: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
 }
 
-.kontener {
-    border: 2px solid white;
-    height: 25vw;
-    width: 18vw;
+.squarezycie {
+    width: 30vw;
+    height: 30vw;
     justify-self: center;
-    margin-top: 10vw;
-    margin-right: 2vw;
+    opacity: 80%;
+    background-color: #E5E5E5;
+    margin-top: 5vw;
+    box-shadow: 1px 1px 2px black;
 }
 
-.ozyciuplus {
-    background-color: rgba(195, 27, 24, 0.8);
-    margin-left: 6vw;
-
+.squarezycie h2 {
+    margin: 1vw;
 }
 
-.ozyciu {
-    grid-column: 4/5;
-    background-color: rgba(195, 27, 24, 0.8);
+.squarezycie h3 {
+    font-size: 1vw;
+    line-height: 1.5vw;
 }
 
-.profamilia {
-    background-color: rgba(195, 27, 24, 0.8);
+.squarezycie p {
+    font-size: 1vw;
+    margin-top: 1.5vw;
+    line-height: 2vw;
+}
+
+.squarezycie > .head {
+    background-color: #C31B18;
 }
 
 /* Grupowe */
