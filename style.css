@@ -1373,7 +1373,7 @@ section {
 
     .square {
         margin-top:6vw;
-        height: 45vw;
+        height: 48vw;
         width:36vw;
     }
 
@@ -1399,7 +1399,7 @@ section {
     }
 
     .square button {
-        margin-top:2vw;
+        margin-top:4vw;
     }
 }
 
