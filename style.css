@@ -71,6 +71,7 @@ nav:after {
     position: relative;
     top: 20%;
     padding: 0.4vw;
+    flex-wrap:wrap;
 
 }
 
