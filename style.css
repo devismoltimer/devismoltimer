@@ -1372,8 +1372,9 @@ section {
     }
 
     .square {
-        margin-top:10vw;
+        margin-top:6vw;
         height: 45vw;
+        width:36vw;
     }
 
     .navike ul li li {
