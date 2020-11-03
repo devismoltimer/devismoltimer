@@ -71,16 +71,16 @@ nav:after {
     position: relative;
     top: 20%;
     padding: 0.4vw;
-    flex-wrap:wrap;
 
 }
 
 nav .logo {
     display: flex;
-    flex-wrap: wrap;
     float: left;
     position: absolute;
     left: 2%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 nav ul {
