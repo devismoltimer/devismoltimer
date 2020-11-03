@@ -75,12 +75,10 @@ nav:after {
 }
 
 nav .logo {
-    display: flex;
+    display: block;
     float: left;
     position: absolute;
     left: 2%;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 nav ul {
