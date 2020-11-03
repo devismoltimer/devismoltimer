@@ -1373,7 +1373,7 @@ section {
 
     .square {
         margin-top:10vw;
-        height: 42vw
+        height: 45vw;
     }
 
     .navike ul li li {
@@ -1395,6 +1395,10 @@ section {
 
     .square li {
         font-size: 1vw;
+    }
+
+    .square button {
+        margin-top:2vw;
     }
 }
 
