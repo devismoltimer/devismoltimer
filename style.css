@@ -53,7 +53,7 @@ nav:after {
     width: 20vw;
     display: flex;
     align-items: center;
-    top:-10%;
+    top: -10%;
 }
 
 .tel i {
@@ -70,7 +70,7 @@ nav:after {
     width: 220px;
     max-width: 300px;
     padding: 0.4vw;
-    
+
 
 }
 
@@ -79,7 +79,7 @@ nav .logo {
     float: left;
     position: absolute;
     left: 2%;
-    top:10%;
+    top: 10%;
 }
 
 nav ul {
@@ -227,7 +227,7 @@ input,
     nav .logo {
         position: absolute;
         z-index: 999;
-        display:block;
+        display: block;
 
     }
 
@@ -303,6 +303,11 @@ input,
 }
 
 @media all and (max-width: 600px) {
+
+    nav {
+        border-bottom: 1px solid #752127;
+    }
+
     nav .logo {
         top: 25%;
     }
@@ -515,25 +520,27 @@ input,
 
 @media all and (max-width:600px) {
     .hero-text {
-        width: 60vw;
-        height: 38vw;
-        transform: translate(16%, 0%)
+        width: 70vw;
+        height: 65vw;
+        transform: translate(5%, 0%);
+        padding: 2vw;
     }
 
     .hero-text h1 {
-        font-size: 3.5vw;
+        font-size: 5vw;
         margin: 4vw 0;
     }
 
     .hero-text h3 {
-        margin: 3vw 0;
-        font-size: 1.8vw;
-        text-align: center;
-        line-height: 3.5vw;
+        margin-left: 5vw;
+        font-size: 3.2vw;
+        text-align: left;
+        line-height: 5vw;
+
     }
 
     .hero-text button {
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
 
     .slide1 {
@@ -752,10 +759,24 @@ input,
 
     }
 
+
+
     .tile:hover {
         transform: none;
         text-shadow: none;
         box-shadow: none;
+    }
+
+    .firmowetile img {
+        background-image: none;
+    }
+
+    .iketile img {
+        background-image: none;
+    }
+
+    .zycietile img {
+        background-image: none;
     }
 
     .tile img {
@@ -784,6 +805,8 @@ input,
         width: 30%;
         height: 5vw;
     }
+
+
 }
 
 
@@ -1015,6 +1038,8 @@ input,
     font-family: 'Roboto Slab', sans-serif;
     margin: 0.5vw 0;
     text-shadow: 0.1px 0.1x black;
+    font-size: 1.2vw;
+
 }
 
 
@@ -1030,7 +1055,13 @@ input,
     margin-left: 1vw;
     margin-bottom: 1vw;
     font-family: 'Roboto Slab', sans-serif;
+    font-size: 1vw;
     font-weight: 500;
+}
+
+.dane h4 span {
+    font-size: 0.8vw;
+    line-height: 1vw;
 }
 
 .container {
@@ -1054,7 +1085,8 @@ input,
     margin-left: 0.2vw;
     ;
     margin-bottom: 0;
-    line-height: 1vw;
+    line-height: 1.2vw;
+    font-size: 0.9vw;
 }
 
 .background {
@@ -1065,7 +1097,7 @@ input,
     margin-top: 2vw;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-image: linear-gradient(to right, white, #E5E5E5);
+    background-color: white;
     padding: 0.5vw;
 }
 
@@ -1133,7 +1165,7 @@ input,
 
     .dane h2 {
         font-size: 5vw;
-        margin: auto;
+        margin-bottom: 5vw;
     }
 
     .dane h2:after {
@@ -1143,6 +1175,11 @@ input,
 
     .dane h4 {
         margin: 0;
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+
+    .dane h4 span {
         font-size: 2vw;
     }
 
@@ -1153,7 +1190,7 @@ input,
     }
 
     .container h3 {
-        font-size: 2.6vw;
+        font-size: 2.8vw;
         margin-top: 1vw;
     }
 
@@ -1224,13 +1261,13 @@ input,
     }
 
     .stopka h1 {
-        font-size: 4vw;
+        font-size: 5vw;
         margin-bottom: 3vw;
     }
 
     .stopka a {
-        font-size: 3vw;
-        line-height: 5vw;
+        font-size: 3.5vw;
+        line-height: 5.8vw;
     }
 
     .stopka div {
@@ -1240,6 +1277,7 @@ input,
     .ubezpieczenia {
         grid-row: 4;
     }
+
 
 }
 
@@ -1370,13 +1408,13 @@ section {
 @media all and (max-width: 968px) {
 
     section {
-        height:120vh;
+        height: 120vh;
     }
 
     .square {
-        margin-top:6vw;
+        margin-top: 6vw;
         height: 42vw;
-        width:36vw;
+        width: 36vw;
     }
 
     .navike ul li li {
@@ -1401,13 +1439,13 @@ section {
     }
 
     .border button {
-        margin-top:2vw;
+        margin-top: 2vw;
     }
 }
 
-@media all (min-width:600px) and (max-width:650px){
+@media all (min-width:600px) and (max-width:650px) {
     .square {
-        height:50vw;
+        height: 50vw;
     }
 }
 
@@ -1430,24 +1468,25 @@ section {
     }
 
     .square h2 {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .square h3 {
-        font-size: 3vw;
+        font-size: 4vw;
         margin: 3vw 2vw;
     }
 
     .square li {
-        font-size: 2.2vw;
-        line-height: 3vw;
+        font-size: 3.2vw;
+        line-height: 3.6vw;
         margin-left: 5vw;
     }
 
+
     .border button {
         margin-top: 4vw;
-        min-height: 5vw;
-        font-size: 1.6vw;
+        height: 8vw;
+        font-size: 3vw;
     }
 
     .head {
@@ -1482,15 +1521,21 @@ section {
 
 .stopkasub h1 {
     font-weight: 500;
+
 }
 
 .tlostopkazyciesub {
     background-image: radial-gradient(circle, rgba(195, 27, 24, 0.2), #E5E5E5);
 }
 
+.tlostopkagrup {
+    background-image: radial-gradient(circle, rgba(117, 33, 39, 0.2), #E5E5E5);
+
+}
+
 @media all and (max-width: 968px) {
     .tlostopkasub {
-        height:70vh
+        height: 70vh
     }
 }
 
@@ -1498,11 +1543,20 @@ section {
 @media all and (max-width: 600px) {
     .tlostopkasub {
         border-top: none;
-        height:100vh;
+        height: 100%;
     }
 
     .stopkasub {
         margin-top: 0;
+    }
+
+    .stopkasub h1 {
+        font-size: 5vw;
+    }
+
+    .stopkasub a {
+        font-size: 3.5vw;
+        line-height: 5.8vw;
     }
 
     .naskroty h1 {
@@ -1527,8 +1581,9 @@ section {
 }
 
 .submenuzycie li {
-    border-top:1px solid white;
+    border-top: 1px solid white;
 }
+
 .squarezycie {
     width: 30vw;
     height: 32vw;
@@ -1553,32 +1608,36 @@ section {
     margin-top: 1.5vw;
     line-height: 2vw;
 }
+
 .squarezycie button {
-background-color:#C31B18;
+    background-color: #C31B18;
 }
+
 .goplus button {
-    margin-top:0.5vw;
+    margin-top: 0.5vw;
 }
 
 .generaliz button {
-    margin-top:1.5vw;
+    margin-top: 1.5vw;
 }
 
 .gpr button {
-    margin-top:0.5vw;
+    margin-top: 0.5vw;
 }
+
 .squarezycie button:hover {
-    border:1px solid #C31B18;
-    color:#C31B18;
+    border: 1px solid #C31B18;
+    color: #C31B18;
 }
+
 .squarezycie > .head {
     background-color: #C31B18;
 }
 
 
-@media all and (max-width:968px){
+@media all and (max-width:968px) {
     .submenuzycie li {
-        border-top:none;
+        border-top: none;
     }
 }
 
@@ -1586,37 +1645,38 @@ background-color:#C31B18;
 
     .zycieizdrowie {
         grid-template-columns: 1fr;
-        background-image: linear-gradient(to right,rgba(195, 27, 24, 0.2), #E5E5E5, #E5E5E5, rgba(195, 27, 24, 0.2));
-        height:100%;
+        background-image: linear-gradient(to right, rgba(195, 27, 24, 0.2), #E5E5E5, #E5E5E5, rgba(195, 27, 24, 0.2));
+        height: 100%;
     }
+
     .squarezycie {
-        width:100%;
+        width: 100%;
         height: 80%;
         margin-top: 22vw;
         opacity: 100%;
     }
 
     .squarezycie h2 {
-        font-size:4vw;
+        font-size: 4vw;
     }
 
     .squarezycie h3 {
         font-size: 4vw;
         margin: 3vw 2vw;
-        line-height:4vw;
+        line-height: 4vw;
     }
 
     .squarezycie p {
-        margin-top:6vw;
+        margin-top: 6vw;
         font-size: 3vw;
         line-height: 3.5vw;
         margin-left: 5vw;
     }
 
     .squarezycie button {
-        margin-top:10vw;
-        height:8vw;
-        font-size:3vw;
+        margin-top: 10vw;
+        height: 8vw;
+        font-size: 3vw;
     }
 
 
@@ -1631,25 +1691,50 @@ background-color:#C31B18;
     height: 100vh;
     background-image: url(grupowe.JPG);
     background-size: cover;
-    display:block;
+    display: block;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 .squaregrupowy {
-    position:relative;
-    top:20%;
-    width:60vw;
-    height:30vw;
-    margin:auto;
+    position: relative;
+    top: 20%;
+    width: 60vw;
+    height: 35vw;
+    margin: auto;
     background-color: #E5E5E5;
     opacity: 80%;
-    box-shadow:1px 1px 2px black;
+    box-shadow: 1px 1px 2px black;
+    padding: 0;
+}
+
+.squaregrupowy > .head {
+    background-color: #752127;
+}
+
+.squaregrupowy button {
+    background-color: #752127;
+}
+
+.squaregrupowy button:hover {
+    color: #752127;
+    border: 1px solid #752127;
 }
 
 .squaregrupowy h2 {
-    margin:1vw;
+    margin: 1vw;
 }
+
+.squaregrupowy h3 {
+    margin: 2vw;
+    font-size: 0.8vw;
+}
+
+.squaregrupowy p {
+    margin: 1vw;
+    font-size: 0.8vw;
+}
+
 .navgrupowe {
     background-color: #752127;
 }
@@ -1662,8 +1747,112 @@ background-color:#C31B18;
     border-top: 1px solid white;
 }
 
-@media all and (max-width:968px){
-    .navgrupowe ul ul li {
-        border-top:none;
+
+
+
+@media all and (max-width:968px) {
+    .squaregrupowy h3 {
+        margin: 1.2vw;
+        font-size: 1vw;
     }
+
+
+    .squaregrupowy p {
+        margin: 0.6vw;
+        font-size: 1vw;
+    }
+
+    .navgrupowe ul ul li {
+        border-top: none;
+    }
+}
+
+@media all and (max-width:600px) {
+    .grupowetlo {
+        background-image: linear-gradient(to right, rgba(117, 33, 39, 0.2), #E5E5E5, rgba(117, 33, 39, 0.2));
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+
+    }
+
+
+    .squaregrupowy {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 100%;
+        margin-top: 0;
+
+    }
+
+    .squaregrupowy h2 {
+        font-size: 4vw;
+        margin: 1vw;
+    }
+
+    .squaregrupowy h3 {
+        font-size: 4vw;
+        margin: 5vw 2vw;
+        line-height: 4vw;
+    }
+
+    .squaregrupowy p {
+        font-size: 4vw;
+        line-height: 4.5vw;
+        margin: 6vw 0;
+
+    }
+
+    .squaregrupowy button {
+        height: 8vw;
+        font-size: 3vw;
+    }
+}
+
+/* Kontakt Subpage */
+
+.kontakt-body {
+    background-image: linear-gradient(to right, rgba(195, 27, 24, 0.2), #E5E5E5, #E5E5E5, rgba(195, 27, 24, 0.2));
+}
+
+.background-kontakt {
+    height: 82vh;
+}
+
+.background-kontakt > .kontakt {
+    margin-top: 15vw;
+}
+
+.dane-kontakt > .container {
+    border: 1px solid black;
+}
+
+.partner-kontakt {
+    border: 1px solid black;
+}
+
+.tlostopkabiala {
+    background-color: white;
+    background-image: none;
+    border-top: 1px solid black;
+}
+
+@media all and (max-width:600px) {
+    .background-kontakt > .kontakt {
+        margin-top: 45vw;
+    }
+}
+
+/* Omnie Subpage */
+
+.omniesub {
+    height: 90vh;
+}
+
+@media all and (max-width:600px) {
+    .omniesub {
+        height: 92vh;
+    }
+}
 }
