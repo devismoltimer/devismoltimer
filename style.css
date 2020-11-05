@@ -389,7 +389,7 @@ input,
     margin: 2vw 1.5vw 1.5vw 1.5vw;
     line-height: 200%;
     text-align: left;
-    line-height: 2vw;
+    line-height: 1.6vw;
 }
 
 
@@ -460,8 +460,18 @@ input,
     color: #8e1230;
 }
 
+.slide1 h3,
+.slide2 h3 {
+    line-height: 2vw;
+}
+
 .slide1 button {
     background-color: #8e1230;
+    transform: translate(-50%, 70%);
+}
+
+.slide2 button {
+    transform: translate(-50%, 70%);
 }
 
 .slide3 > .hero-text {
@@ -546,6 +556,23 @@ input,
     .slide1 {
         background-position: 3% top;
     }
+
+    .slide1 button,
+    .slide2 button {
+        transform: translate(-50%, 50%);
+    }
+
+
+
+    .slide3 button {
+        background-color: #752127;
+        transform: translate(-50%, 40%)
+    }
+
+    .slide3 h3 {
+        line-height: 6vw;
+    }
+
 }
 
 
