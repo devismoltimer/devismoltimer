@@ -123,7 +123,7 @@ nav ul ul {
     visibility: hidden;
     transition: all 0.5s ease 0s;
     height: auto;
-    left: 0%
+    left: -4%
 }
 
 nav ul li:hover > ul {
@@ -137,13 +137,17 @@ nav ul li:hover > ul {
 nav ul ul li {
     position: relative;
     margin: 0px;
-    width: 220px;
+    width: 262px;
     float: none;
     display: list-item;
     transition: .3s;
     border-top: 1px solid #C31B18;
     text-align: center;
 
+}
+
+.bezpieczny {
+    margin-left: 0;
 }
 
 nav ul ul li a {
@@ -390,6 +394,8 @@ input,
     line-height: 200%;
     text-align: left;
     line-height: 1.6vw;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
 }
 
 
@@ -405,7 +411,7 @@ input,
     text-transform: uppercase;
     letter-spacing: 0.01vw;
     position: absolute;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 0%);
     transition-delay: 50ms;
 
 
@@ -566,7 +572,7 @@ input,
 
     .slide3 button {
         background-color: #752127;
-        transform: translate(-50%, 40%)
+        transform: translate(-50%, 45%)
     }
 
     .slide3 h3 {
@@ -837,6 +843,121 @@ input,
 }
 
 
+/*bezpieczny.pl*/
+
+.bezpiecznypl {
+    margin-top: 5vw;
+    text-align: center;
+    margin-bottom: 10vw;
+}
+
+.bezpiecznypl h1 {
+    color: #C31B18;
+    font-family: 'Roboto slab';
+    margin-bottom: 4vw;
+}
+
+.bezpiecznypl h2 {
+    line-height: 2vw;
+}
+
+.link {
+    margin-top: 2vw;
+}
+
+.link img {
+    width: 2vw;
+}
+
+.link a {
+    display: inline-block;
+    background-color: #C31B18;
+    width: 13vw;
+    font-size: 1vw;
+    color: white;
+    background: #C31B18;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.01vw;
+    text-decoration: none;
+    position: relative;
+    transition: all .25s;
+    overflow: hidden;
+    padding: 0.5vw 4vw 0.5vw 0.2vw;
+
+}
+
+.link a:hover {
+    background: transparent;
+    color: #C31B18;
+    font-weight: 500;
+    border: 1px solid #C31B18;
+    padding-left: 5vw;
+    padding-right: 1vw;
+}
+
+.link a:hover img.arrow-right {
+    right: -4vw;
+}
+
+.link a:hover img.arrow-left {
+    left: 1vw;
+}
+
+.link img.arrow-right {
+    position: absolute;
+    top: 0.2vw;
+    right: 1vw;
+    transition: all .25s;
+}
+
+.link img.arrow-left {
+    position: absolute;
+    top: 0.2vw;
+    left: -5vw;
+}
+
+
+@media all and (max-width:600px) {
+    .bezpiecznypl {
+        margin-top: 20vw;
+    }
+
+    .bezpiecznypl h1 {
+        font-size: 5vw;
+    }
+
+    .bezpiecznypl h2 {
+        font-size: 3vw;
+        line-height: 6vw;
+    }
+
+    .link img {
+        width: 5vw;
+    }
+
+    .link a {
+        font-size: 2vw;
+        width: 30%;
+        height: 8vw;
+        padding: 2.2vw;
+        margin-top: 3vw;
+    }
+
+    .link a:hover {
+        padding: 2.4vw;
+    }
+
+    .link img.arrow-right {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+        transition: all .25s;
+    }
+}
+
 /* O mnie */
 
 .omnie {
@@ -1047,11 +1168,11 @@ input,
 .mapa iframe {
     width: 20vw;
     height: 20vw;
+    box-shadow: 1px 1px 5px black;
 }
 
 .mapa {
     width: 20vw;
-    border: 1px solid white;
     margin-left: 2vw;
     height: 20vw;
 }
@@ -1126,6 +1247,7 @@ input,
     grid-template-columns: 1fr 4fr;
     background-color: white;
     padding: 0.5vw;
+    border: 1px solid black;
 }
 
 .partner h3 {
@@ -1213,7 +1335,8 @@ input,
     .container {
         width: 100%;
         margin: 5vw auto;
-        height: 20vw;
+        height: 22vw;
+        border: 1px solid black;
     }
 
     .container h3 {
@@ -1224,6 +1347,10 @@ input,
     .container h4 {
         line-height: 3.5vw;
         margin-top: 2vw;
+    }
+
+    .partner {
+        border: 1px solid black;
     }
 
     .partner img {
@@ -1290,6 +1417,7 @@ input,
     .stopka h1 {
         font-size: 5vw;
         margin-bottom: 3vw;
+        text-shadow: 1px 1px 4px black;
     }
 
     .stopka a {
@@ -1579,6 +1707,7 @@ section {
 
     .stopkasub h1 {
         font-size: 5vw;
+        text-shadow: 1px 1px 1px white;
     }
 
     .stopkasub a {
