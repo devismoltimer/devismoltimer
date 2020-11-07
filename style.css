@@ -580,7 +580,7 @@ input,
     }
 }
 
-@media all and (max-width:320px) {
+@media all and (max-width:340px) {
     .hero-text {
         height:70vw;
     }
