@@ -578,9 +578,13 @@ input,
     .slide3 h3 {
         line-height: 6vw;
     }
-
 }
 
+@media all and (max-width:320px) {
+    .hero-text {
+        height:70vw;
+    }
+}
 
 
 
