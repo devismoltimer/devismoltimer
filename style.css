@@ -534,7 +534,7 @@ input,
 
 }
 
-@media all and (max-width:600px) {
+@media all and (max-width:600px) and (orientation:portrait) {
     .hero-text {
         width: 70vw;
         height: 65vw;
