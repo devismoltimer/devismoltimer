@@ -578,12 +578,6 @@ input,
 
 }
 
-@media all and (max-width:400px) {
-    .hero-text h3 {
-        font-size: 2.5vw;
-    }
-}
-
 
 
 /*TILES GRID!*/
