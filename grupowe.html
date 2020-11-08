@@ -94,4 +94,13 @@
     </div>
     <script src="viewport-units-buggyfill.js"></script>
     <script>window.viewportUnitsBuggyfill.init();</script>
+    <script>window.viewportUnitsBuggyfill.init({
+        force: true,
+        refreshDebounceWait: 250,
+        hacks: window.viewportUnitsBuggyfillHacks,
+
+            appendToBody: true
+      });
+      </script>
+    
 </body></html>
