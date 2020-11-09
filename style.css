@@ -791,6 +791,18 @@ input,
     .more {
         margin-top: 4vw;
     }
+
+    .firmowetile img {
+        background-image: none;
+    }
+
+    .iketile img {
+        background-image: none;
+    }
+
+    .zycietile img {
+        background-image: none;
+    }
 }
 
 @media all and (max-width:600px) {
@@ -824,17 +836,7 @@ input,
         box-shadow: none;
     }
 
-    .firmowetile img {
-        background-image: none;
-    }
 
-    .iketile img {
-        background-image: none;
-    }
-
-    .zycietile img {
-        background-image: none;
-    }
 
     .tile img {
         max-width: 15vw;
@@ -1617,11 +1619,17 @@ section {
     }
 
     .square li {
-        font-size: 1vw;
+        font-size: calc(7px + 0.1vw);
     }
 
     .border button {
         margin-top: 2vw;
+    }
+}
+
+@media all and (max-width: 720px) {
+    .square {
+        height: 46vw;
     }
 }
 
