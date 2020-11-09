@@ -197,12 +197,17 @@ input,
     color: #C31B18;
 }
 
+.tele-mobile img {
+    display: none;
+}
 
 @media all and (max-width: 968px) {
     nav {
         min-height: 60px;
         width: 100%;
     }
+
+
 
     nav ul {
         float: left;
@@ -301,6 +306,16 @@ input,
 
     .logo img {
         width: 200px;
+    }
+
+    .tele-mobile img {
+        display: block;
+        width: 80px;
+        position: absolute;
+        bottom: 5vw;
+        z-index: 999;
+        right: 5vw;
+        position: fixed;
     }
 
 
@@ -517,9 +532,13 @@ input,
 
     .hero-text h3 {
         margin: 1vw 2vw;
-        font-size: 1.3vw;
+        font-size: calc(8px + 0.2vw);
         text-align: center;
         line-height: 2.4vw;
+    }
+
+    .slide3 h3 {
+        line-height: 2vw;
     }
 
     .hero-text button {
@@ -534,11 +553,10 @@ input,
 
 }
 
-
 @media all and (max-width:600px) {
     .hero-text {
         width: 70vw;
-        min-height: 65vw;
+        height: 65vw;
         transform: translate(5%, 0%);
         padding: 2vw;
     }
@@ -550,7 +568,7 @@ input,
 
     .hero-text h3 {
         margin-left: 5vw;
-        font-size: calc(10px + 0.1vw);
+        font-size: calc(10px + 0.2vw);
         text-align: left;
         line-height: 5vw;
 
