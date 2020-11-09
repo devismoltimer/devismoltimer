@@ -1835,7 +1835,11 @@ section {
 
 @media (max-width:968px) and (orientation:landscape) {
     .squarezycie h3 {
-        font-size: calc(6px + 0.1vw);
+        font-size: calc(6px + 0.2vw);
+    }
+
+    .squarezycie p {
+        font-size: calc(5.8px + 0.2vw);
     }
 }
 
