@@ -517,7 +517,7 @@ input,
 @media all and (max-width: 968px) {
     .hero-text {
         width: 45vw;
-        height: calc(150px + 5vw);
+        height: calc(180px + 1vw);
         transform: translate(40%, 0%);
         opacity: 90%;
         padding: 0;
@@ -550,6 +550,16 @@ input,
     .slide3 {
         background-position: 60% top;
     }
+
+    .slide1 button {
+        background-color: #8e1230;
+        transform: translate(-50%, 0%);
+    }
+
+    .slide2 button {
+        transform: translate(-50%, 0%);
+    }
+
 
 
 }
