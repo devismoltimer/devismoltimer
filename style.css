@@ -1627,11 +1627,7 @@ section {
     }
 }
 
-@media all and (max-width: 720px) {
-    .square {
-        height: 46vw;
-    }
-}
+
 
 @media all (min-width:600px) and (max-width:650px) {
     .square {
