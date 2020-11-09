@@ -532,7 +532,7 @@ input,
 
     .hero-text h3 {
         margin: 1vw 2vw;
-        font-size: calc(8px + 0.2vw);
+        font-size: calc(8px + 0.1vw);
         text-align: center;
         line-height: 2.4vw;
     }
@@ -568,7 +568,7 @@ input,
 
     .hero-text h3 {
         margin-left: 5vw;
-        font-size: calc(10px + 0.2vw);
+        font-size: calc(10px + 0.1vw);
         text-align: left;
         line-height: 5vw;
 
