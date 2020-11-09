@@ -1835,7 +1835,7 @@ section {
 
 @media (max-width:720px) and (orientation:landscape) {
     .squarezycie {
-        height: 35vw;
+        height: 36vw;
     }
 
     .squarezycie h3 {
@@ -1844,7 +1844,7 @@ section {
     }
 
     .squarezycie p {
-        font-size: 7.5px;
+        font-size: 7px;
 
     }
 }
