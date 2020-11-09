@@ -1833,6 +1833,12 @@ section {
     }
 }
 
+@media (max-width:968px) and (orientation:landscape) {
+    .squarezycie h3 {
+        font-size: calc(6px + 0.1vw);
+    }
+}
+
 @media all and (max-width:600px) {
 
     .zycieizdrowie {
