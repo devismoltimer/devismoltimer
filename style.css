@@ -1833,7 +1833,7 @@ section {
     }
 }
 
-@media (max-width:968px) and (orientation:landscape) and (-webkit-touch-callout:none) {
+@media (max-width:968px) and (orientation:landscape) {
     .squarezycie {
         height: 33vw;
     }
