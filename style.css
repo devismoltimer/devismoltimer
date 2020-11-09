@@ -517,7 +517,7 @@ input,
 @media all and (max-width: 968px) {
     .hero-text {
         width: 45vw;
-        height: 26vw;
+        height: calc(150px + 5vw);
         transform: translate(40%, 0%);
         opacity: 90%;
         padding: 0;
