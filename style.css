@@ -1833,13 +1833,13 @@ section {
     }
 }
 
-@media (max-width:968px) and (orientation:landscape) {
+@media (max-width:720px) and (orientation:landscape) {
     .squarezycie {
-        height: 33vw;
+        height: 35vw;
     }
 
     .squarezycie h3 {
-        font-size: 3px;
+        font-size: 7.5px;
 
     }
 
