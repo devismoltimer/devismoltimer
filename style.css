@@ -1627,9 +1627,9 @@ section {
     }
 }
 
-@media (max-width: 968px) and (orientation:landscape) {
+@media (max-width: 720px) and (orientation:landscape) {
     .square {
-        height: 50vw;
+        height: 45vw;
     }
 }
 
