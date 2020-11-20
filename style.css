@@ -48,12 +48,12 @@ nav:after {
 
 
 .tel {
-    margin-left: 30vw;
+    margin-left: 35vw;
     position: absolute;
     width: 20vw;
     display: flex;
     align-items: center;
-    top: -10%;
+    top: -9.5%;
 }
 
 .tel i {
@@ -683,16 +683,6 @@ input,
 .tile img {
     max-width: 5vw;
     width: 5vw;
-    background-image: radial-gradient(circle, rgba(142, 18, 48, 0.2), white);
-}
-
-.zycietile img {
-    background-image: radial-gradient(circle, rgba(195, 27, 24, 0.2), white);
-}
-
-.firmowetile img {
-    background-image: radial-gradient(circle, rgba(117, 33, 39, 0.2), white);
-}
 }
 
 .tile a {
@@ -999,19 +989,26 @@ input,
 }
 
 .foto {
-    max-width: 30vw;
+    text-align: left;
+}
+
+.foto img {
+    max-width: 28vw;
     box-shadow: 1px 1px 5px black;
 }
 
 .opis {
-    width: 24vw;
-    justify-self: flex-end;
+    width: 28vw;
+    justify-self: center;
+    text-align: right;
+    align-self:center;
 }
 
 .opis h1 {
     font-family: 'Roboto Slab', sans-serif;
     font-weight: 400;
     color: #C31B18;
+    margin-bottom: 2vw;
 }
 
 .opis h1:after {
@@ -1019,19 +1016,21 @@ input,
     display: block;
     border-bottom: 1px #C31B18 solid;
     width: 30%;
-    margin: 0.2vw 16.8vw;
+    margin: 0.2vw 20vw;
 }
 
-.opis h4 {
+.opis h2 {
     margin: 1.5vw 0;
-    font-size: 0.8vw;
     font-weight: 500;
+    text-align: justify;
+   
 }
 
 .wrapper {
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr 7fr;
     text-align: center;
+    margin-left: 5vw;
 }
 
 .social img {
@@ -1102,10 +1101,10 @@ input,
 
     .opis h1:after {
         width: 33%;
-        margin: 0.2vw 26.5vw;
+        margin: 0.2vw 13.4vw;
     }
 
-    .opis h4 {
+    .opis h2 {
         font-size: 1.3vw;
     }
 
@@ -1129,11 +1128,13 @@ input,
     .omnie {
         grid-template-columns: 1fr;
         justify-content: center;
+        background-image:url(foto.jpg);
+        background-position: center;
+        background-size:cover;
     }
 
     .foto {
-        max-width: 40%;
-        margin: auto;
+        display:none;
     }
 
     .opis {
@@ -1146,25 +1147,36 @@ input,
     .opis h1 {
         margin: 5vw auto;
         font-size: 6vw;
+        color:white;
+        text-shadow:1px 1px 1px black;
     }
 
     .opis h1:after {
         width: 22%;
         margin: 0.2vw 39vw;
+        border-bottom: 1px white solid;
     }
 
-    .opis h4 {
-        font-size: 2vw;
+    .opis h2 {
+        font-size: 3vw;
         width: 60%;
         margin: auto;
+        color:white;
+        text-shadow:1px 1px 1px black;
     }
 
+    .social {
+            justify-self:center;
+        align-self:center;
+    }
+    
     .social img {
         width: 5vw;
     }
 
     .social h5 {
-        font-size: 1.2vw
+        font-size: 1.4vw
+            
     }
 
     .wrapper {
@@ -1182,46 +1194,39 @@ input,
 
 /*Kontakt*/
 
+.bialystokbackground {
+    background-image:url("bialystok.jpg");
+    background-size: cover;
+    background-position: center;
+    height:80vh;
+    display:grid;
+    align-items: center;
+    border-top:1px solid black;
+}
 
 .kontakt {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 50vw;
-    margin: 10vw auto;
+    width: 66vw;
+    margin: 0 auto;
+   
 }
 
 .mapa iframe {
-    width: 20vw;
-    height: 20vw;
+    width: 28vw;
+    height: 28vw;
     box-shadow: 1px 1px 5px black;
 }
 
 .mapa {
-    width: 20vw;
-    margin-left: 2vw;
-    height: 20vw;
+    width: 28vw;
+    height: 28vw;
+    align-self:flex-end;
+    justify-self:flex-end;
 }
-
 .dane {
-    margin-lefT: 2vw;
-}
-
-.dane h2 {
-    color: #C31B18;
-    font-family: 'Roboto Slab', sans-serif;
-    margin: 0.5vw 0;
-    text-shadow: 0.1px 0.1x black;
-    font-size: 1.2vw;
-
-}
-
-
-.dane h2:after {
-    content: '';
-    display: block;
-    border-bottom: 0.1px #C31B18 solid;
-    width: 32%;
-    margin-top: 0.2vw;
+    align-self: center;
+    justify-self: flex-start;
 }
 
 .dane h4 {
@@ -1238,36 +1243,48 @@ input,
 }
 
 .container {
-    background-color: rgba(195, 27, 24, 0.8);
+    background-color: rgba(195, 27, 24, 0.9);
     border: 1px solid #E5E5E5;
     color: white;
     padding: 0.8vw;
-    width: 60%;
-    grid-column: 1
+    width: 28vw;
 }
 
 .container h3 {
-    font-size: 0.8vw;
+    font-size: 1.2vw;
     font-weight: 500;
-    margin-bottom: 0.5vw;
+    margin: 2vw 0;
+    text-align: center;
 }
 
 .container h4 {
-    margin-top: 0.5vw;
     font-weight: 300;
-    margin-left: 0.2vw;
-    ;
-    margin-bottom: 0;
+    margin-bottom: 3vw;
     line-height: 1.2vw;
     font-size: 0.9vw;
+    text-align: center;
+
 }
 
-.background {
-    background-image: linear-gradient(white, #C31B18, #C31B18)
+.rewerse {
+    background: white;
+    color:rgba(195, 27, 24, 0.9);
+    padding:0.5vw;
+    border:1px solid black;
+    margin:1vw;
+}
+
+.rewerse1 {
+    border-top:none;
+}
+
+.rewerse h4 {
+    margin:0.5vw;
+    font-weight: 600;
 }
 
 .partner {
-    margin-top: 2vw;
+    margin-top: 2.5vw;
     display: grid;
     grid-template-columns: 1fr 4fr;
     background-color: white;
@@ -1284,6 +1301,7 @@ input,
     width: 15vw;
 
 }
+
 
 @media all and (max-width: 968px) {
     .container {
@@ -1320,21 +1338,23 @@ input,
     }
 
     .mapa {
-        width: 50vw;
-        height: 50vw;
+        width: 52vw;
+        height: 52vw;
         margin-top: 5vw;
-        margin-left: 0;
+        justify-self:center;
     }
 
     .mapa iframe {
-        width: 50vw;
-        height: 50vw;
+        width: 52vw;
+        height: 52vw;
+       
     }
 
     .dane {
         grid-row: 1;
         text-align: center;
         margin: 0;
+          justify-self:center;
     }
 
     .dane h2 {
@@ -1360,7 +1380,6 @@ input,
     .container {
         width: 100%;
         margin: 5vw auto;
-        height: 22vw;
         border: 1px solid black;
     }
 
@@ -1371,9 +1390,13 @@ input,
 
     .container h4 {
         line-height: 3.5vw;
-        margin-top: 2vw;
+        margin: 2vw 0;
     }
 
+    .rewerse h4 {
+        margin:1vw;
+    }
+    
     .partner {
         border: 1px solid black;
     }
@@ -1392,7 +1415,7 @@ input,
 
 .stopka {
     display: grid;
-    grid-template-columns: 1.2fr 0.9fr 0.9fr 0.9fr;
+    grid-template-columns: 1.3fr 0.9fr 0.9fr 1.3fr;
     width: 60%;
     margin: 0 auto;
     color: white;
@@ -1402,8 +1425,13 @@ input,
 .stopka h1 {
     font-size: calc(8px + 0.6vw);
     font-weight: 700;
-    margin: 1vw 0;
+    margin:3vw 0 1vw 0;
     text-shadow: 0.1px 0.1px black;
+}
+
+.background {
+    background:#C31B18;
+    border-top: 1px solid black;
 }
 
 .stopka a {
@@ -1424,10 +1452,17 @@ input,
 }
 
 
+@media all and (max-width: 1500px) {
+    .stopka {
+        width: 75%;
+    }
+}
+
 @media all and (max-width: 968px) {
 
     .stopka {
-        height: 40vh
+        height: 40vh;
+        width: 85%;
     }
 
     .stopka h1 {
@@ -1629,7 +1664,7 @@ section {
 
 @media (max-width: 720px) and (orientation:landscape) {
     .square {
-        height: 45vw;
+        height: 48vw;
     }
 }
 
@@ -1726,7 +1761,7 @@ section {
 
 @media all and (max-width: 968px) {
     .tlostopkasub {
-        height: 70vh
+        height: 100%;
     }
 }
 
@@ -1805,8 +1840,24 @@ section {
     background-color: #C31B18;
 }
 
+
+.goplus > .border {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.goplus h3 {
+    grid-column: 1/3;
+}
+
+.goplus p {
+    grid-column: 1/3;
+}
+
 .goplus button {
     margin-top: 0.5vw;
+    width: 10vw;
 }
 
 .generaliz button {
@@ -1847,6 +1898,19 @@ section {
         font-size: 7px;
 
     }
+
+    .goplus button {
+        margin-top: 1vw;
+    }
+
+    .generaliz button {
+        margin-top: 1.5vw;
+    }
+
+    .gpr button {
+        margin-top: 2.5vw;
+    }
+
 }
 
 @media all and (max-width:600px) {
@@ -1887,6 +1951,9 @@ section {
         font-size: 3vw;
     }
 
+    .goplus button {
+        width: 40vw;
+    }
 
 
 }
@@ -1934,12 +2001,12 @@ section {
 }
 
 .squaregrupowy h3 {
-    margin: 2vw;
+    margin: 2vw 4vw;
     font-size: 0.8vw;
 }
 
 .squaregrupowy p {
-    margin: 1vw;
+    margin: 2vw 1vw;
     font-size: 0.8vw;
 }
 
@@ -1973,6 +2040,17 @@ section {
     .navgrupowe ul ul li {
         border-top: none;
     }
+}
+
+@media (max-width: 720px) and (orientation:landscape) {
+
+    .squaregrupowy h3,
+    .squaregrupowy p {
+        font-size: calc(7px + 0.1vw);
+        line-height: calc(9px + 0.1vw);
+    }
+
+
 }
 
 @media all and (max-width:600px) {
@@ -2017,6 +2095,7 @@ section {
         font-size: 3vw;
     }
 }
+
 
 /* Kontakt Subpage */
 
