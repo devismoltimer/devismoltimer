@@ -1474,7 +1474,7 @@ input,
     }
 
     .rewerse i {
-        margin: 1vw;
+        margin: 2vw;
         font-size: 3vw;
     }
 
@@ -1539,11 +1539,11 @@ input,
 
 .logostopka img {
     height: 8vw;
-    opacity: 50%;
+    opacity: 60%;
 }
 
 .tlostopkasub img {
-    opacity: 75%;
+    opacity: 70%;
 }
 
 @media all and (max-width: 1500px) {
@@ -1589,6 +1589,11 @@ input,
 
     .ubezpieczenia {
         grid-row: 4;
+    }
+
+    .logostopka img {
+        height: 50px;
+        opacity: 60%;
     }
 
 
