@@ -70,6 +70,7 @@ nav:after {
     width: 220px;
     max-width: 300px;
     padding: 0.4vw;
+    cursor:pointer;
 
 
 }
@@ -1001,7 +1002,7 @@ input,
     width: 28vw;
     justify-self: center;
     text-align: right;
-    align-self:center;
+    align-self: center;
 }
 
 .opis h1 {
@@ -1023,43 +1024,48 @@ input,
     margin: 1.5vw 0;
     font-weight: 500;
     text-align: justify;
-   
+
 }
 
 .opis a {
-    float:left;
-    color:black;
+    float: left;
+    color: black;
     line-height: 2.5vw;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-items: center;
     text-decoration: none;
-    
+
+}
+
+.opis a:hover {
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
 
 .opis i {
-color:#C31B18;
-font-size:2vw;
-margin-right:1vw;
+    color: #C31B18;
+    font-size: 2vw;
+    margin-right: 1vw;
 }
 
 .fbicon i {
-    margin-right:2vw;
+    margin-right: 2vw;
 }
 
 .phoneicon i {
-    margin-right:1.4vw;
+    margin-right: 1.4vw;
 }
 
 .opis h4 {
-    font-size:1.2vw;
-    font-weight:500;
+    font-size: 1.2vw;
+    font-weight: 500;
 }
 
 .wrapper {
-    display:grid;
+    display: grid;
     text-align: center;
-    margin-top:0.5vw;
+    margin-top: 0.5vw;
 }
 
 .social img {
@@ -1097,13 +1103,14 @@ margin-right:1vw;
     text-transform: uppercase;
     letter-spacing: 0.01vw;
     padding: 0.5vw;
+    margin-bottom: 1vw;
 
 }
 
 .readmore button:hover {
     background: transparent;
     color: #C31B18;
-    font-weight: 400;
+    font-weight: 500;
     border: 1px solid #C31B18;
 }
 
@@ -1116,12 +1123,12 @@ margin-right:1vw;
     }
 
     .foto img {
-        max-width:35vw;
+        max-width: 35vw;
     }
 
     .opis {
         width: 40vw;
-        margin-left:2vw;
+        margin-left: 2vw;
     }
 
     .opis h1 {
@@ -1141,7 +1148,7 @@ margin-right:1vw;
         width: 3.2vw;
     }
 
-   
+
     .social h5 {
         font-size: .8vw;
     }
@@ -1154,13 +1161,13 @@ margin-right:1vw;
     .omnie {
         grid-template-columns: 1fr;
         justify-content: center;
-        background-image:url(foto.jpg);
+        background-image: url(foto1.JPG);
         background-position: center;
-        background-size:cover;
+        background-size: cover;
     }
 
     .foto {
-        display:none;
+        display: none;
     }
 
     .opis {
@@ -1173,8 +1180,8 @@ margin-right:1vw;
     .opis h1 {
         margin: 5vw auto;
         font-size: 6vw;
-        color:white;
-        text-shadow:1px 1px 1px black;
+        color: white;
+        text-shadow: 1px 1px 1px black;
     }
 
     .opis h1:after {
@@ -1187,62 +1194,61 @@ margin-right:1vw;
         font-size: 3vw;
         width: 60%;
         margin: auto;
-        color:white;
-        text-shadow:1px 1px 1px black;
+        color: white;
+        text-shadow: 1px 1px 1px black;
     }
 
-.opis a {
-    margin-top:2vw;
-    float:none;
-    display:grid;
-}
+    .opis a {
+        margin-top: 2vw;
+        float: none;
+        display: grid;
+    }
 
-.opis i {
-    font-size:10vw;
-    text-shadow:0.5px 0.5px 1px white;
-}
+    .opis i {
+        font-size: 10vw;
+        text-shadow: 0.5px 0.5px 1px white;
+    }
 
-.opis h4 {
-    margin-top:2vw;
-    font-size:3vw;
-    color:white;
-}
+    .opis h4 {
+        margin-top: 2vw;
+        font-size: 3vw;
+        color: white;
+    }
 
-   
-    
+
+
     .social img {
         width: 5vw;
     }
 
     .social h5 {
         font-size: 1.4vw
-            
     }
 
 
     .opis button {
         font-size: 2vw;
         height: 7vw;
-        margin-bottom:5vw;
+        margin-bottom: 5vw;
         width: 30%;
     }
 
-.readmore {
-    width:90%;
-}
+    .readmore {
+        width: 90%;
+    }
 }
 
 
 /*Kontakt*/
 
 .bialystokbackground {
-    background-image:url("bialystok.jpg");
+    background-image: url("bialystok1.JPG");
     background-size: cover;
     background-position: center;
-    height:80vh;
-    display:grid;
+    height: 80vh;
+    display: grid;
     align-items: center;
-    border-top:1px solid black;
+    border-top: 1px solid black;
 }
 
 .kontakt {
@@ -1250,7 +1256,7 @@ margin-right:1vw;
     grid-template-columns: 1fr 1fr;
     width: 66vw;
     margin: 0 auto;
-   
+
 }
 
 .mapa iframe {
@@ -1262,9 +1268,10 @@ margin-right:1vw;
 .mapa {
     width: 28vw;
     height: 28vw;
-    align-self:flex-end;
-    justify-self:flex-end;
+    align-self: flex-end;
+    justify-self: flex-end;
 }
+
 .dane {
     align-self: center;
     justify-self: flex-start;
@@ -1296,6 +1303,7 @@ margin-right:1vw;
     font-weight: 500;
     margin: 2vw 0;
     text-align: center;
+    text-shadow: 1px 1px 0.5px black;
 }
 
 .container h4 {
@@ -1313,22 +1321,25 @@ margin-right:1vw;
 
 .rewerse {
     background: white;
-    color:rgba(195, 27, 24, 0.9);
-    padding:0.5vw;
-    border:1px solid black;
-    margin:1vw;
+    color: rgba(195, 27, 24, 0.9);
+    padding: 0.5vw;
+    border: 1px solid black;
+    margin: 1vw;
     text-align: center;
 }
 
-.rewerse1 {
-    border-top:none;
+.rewerse:hover {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
 }
 
 .rewerse i {
-    margin:0.5vw;
+    margin: 0.5vw;
     font-weight: 500;
-    font-size:1.3vw;
+    font-size: 1.3vw;
 }
+
 
 .partner {
     margin-top: 2.5vw;
@@ -1350,12 +1361,13 @@ margin-right:1vw;
 }
 
 
-@media all and (max-width: 968px) {
-    .container {
-        padding: 0.8vw;
-        width: 90%;
-    }
+@media (min-width:600px) and (max-width: 968px) {
 
+      .kontakt {
+        width: auto;
+        margin: 12vw 7vw;
+    }
+    
     .dane h2 {
         font-size: 2vw;
     }
@@ -1364,6 +1376,26 @@ margin-right:1vw;
         font-sizE: 1.2vw;
     }
 
+    .mapa {
+         align-self:flex-start;
+        justify-self:flex-start;
+    }
+    
+    .mapa iframe {
+        width:40vw;
+        height:40vw;
+    }
+    
+    .dane {
+        width:35vw;
+        align-self:center;
+        margin-top:8vw;
+    }
+    
+    .container {
+        width:35vw;
+    }
+    
     .container h3 {
         font-size: 1.2vw;
         margin-bottom: 0.5vw;
@@ -1388,20 +1420,21 @@ margin-right:1vw;
         width: 52vw;
         height: 52vw;
         margin-top: 5vw;
-        justify-self:center;
+        justify-self: center;
+        margin-bottom: 5vw;
     }
 
     .mapa iframe {
         width: 52vw;
         height: 52vw;
-       
+
     }
 
     .dane {
         grid-row: 1;
         text-align: center;
         margin: 0;
-          justify-self:center;
+        justify-self: center;
     }
 
     .dane h2 {
@@ -1440,10 +1473,11 @@ margin-right:1vw;
         margin: 2vw 0;
     }
 
-    .rewerse h4 {
-        margin:1vw;
+    .rewerse i {
+        margin: 1vw;
+        font-size: 3vw;
     }
-    
+
     .partner {
         border: 1px solid black;
     }
@@ -1471,15 +1505,15 @@ margin-right:1vw;
 .stopka h1 {
     font-size: calc(8px + 0.6vw);
     font-weight: 700;
-    margin:3vw 0 1vw 0;
+    margin: 3vw 0 1vw 0;
     text-shadow: 0.1px 0.1px black;
 }
 
 .background {
-    background:#C31B18;
+    background: #C31B18;
     border-top: 1px solid black;
-    padding-bottom:2vw;
-    
+    padding-bottom: 2vw;
+
 }
 
 .stopka a {
@@ -1785,6 +1819,7 @@ section {
 .stopkasub {
     border-radius: 5px;
     padding: 0.5vw;
+    padding-bottom: 2vw;
 }
 
 .tlostopkasub {
@@ -1796,6 +1831,7 @@ section {
     font-weight: 500;
 
 }
+
 
 .tlostopkazyciesub {
     background-image: radial-gradient(circle, rgba(195, 27, 24, 0.2), #E5E5E5);
@@ -2151,7 +2187,7 @@ section {
 }
 
 .background-kontakt {
-    height: 82vh;
+    height: 100%;
 }
 
 .background-kontakt > .kontakt {
@@ -2179,7 +2215,7 @@ section {
 /* Omnie Subpage */
 
 .omniesub {
-    height: 90vh;
+    height: 100%;
 }
 
 @media all and (max-width:600px) {
